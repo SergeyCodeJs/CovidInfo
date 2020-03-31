@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
+import { connect } from 'react-redux'
 import './App.css';
+import Layout from './hoc/Layout'
+import Header from './components/Header/Header';
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import CommonInfo from './components/CovidInfo/CommonInfo/CommonInfo'
+import Russia from './components/CovidInfo/Countries/Russia/Russia'
+import RussiaRegions from './components/CovidInfo/Countries/Russia/russiaRegions/russiaRegions'
+import Moscow from './components/CovidInfo/Countries/Russia/Moscow/Moscow'
+import Map from './components/Map/Map'
+import CovidRisingGraphic from './components/graphics/covidRisingGraphic/covidRisingGraphic';
+import RussianCities from './components/CovidInfo/Countries/Russia/russianCities/russianCities'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  render(props) {
+    if (this.props.dailySummary && this.props.confirmed && this.props.deaths && this.props.recovered && this.props.russiaCommon) {
+      return (
+        <React.Fragment>
+          <Header />
+          
+          <Map></Map>
+          <div className='stat-blocks-container'>
+              <CommonInfo/>
+              <Russia>
+              </Russia>
+              <RussianCities />
+              <Moscow />
+          </div>
+          <Layout>
+            <CovidRisingGraphic />
+          </Layout>
+        </React.Fragment>
+      );} else {
+        return <Backdrop open={true} className='backdrop'> <CircularProgress color="inherit" /></Backdrop>
+      }
+    }
+  }
+  
+
+function mapStateToProps(state) {
+  return {...state}
 }
 
-export default App;
+export default connect(mapStateToProps, null)(App)
