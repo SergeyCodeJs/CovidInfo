@@ -1,5 +1,5 @@
 .russian-cities-container {
-  top: 554px;
+  top: -1;
   position: absolute;
   z-index: 100;
   color: white;
@@ -13,7 +13,7 @@
 }
 
 .russian-cities-container-show {
-  top: 554px;
+  top: -1px;
   position: absolute;
   z-index: 100;
   color: white;

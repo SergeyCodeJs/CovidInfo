@@ -17,8 +17,9 @@ class Russia extends React.Component {
     let yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1)).toLocaleDateString();
     return (
       <div className='data-container'>
+        {this.props.children}
         <div>
-        <Button style={{position: "absolute", left: 225, top: -1}} variant="contained" onClick={() => this.props.onClick(this.props)}>По регионам</Button>
+        <Button style={{position: "absolute", left: 195, top: -1, height: 35, width: 150}} variant="contained" onClick={() => this.props.onClick(this.props)}>По регионам</Button>
         <div className='data-info-header'>В России <p className='data-info-header--state'>{'(по состоянию на: ' + yesterdayDate + ')'}</p></div>
           <div className='data-info-sick red'>{total}</div>
           <div className='data-info-sick--text red'>заболело</div>

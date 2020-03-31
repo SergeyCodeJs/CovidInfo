@@ -25,8 +25,9 @@ class App extends React.Component {
           <div className='stat-blocks-container'>
               <CommonInfo/>
               <Russia>
-              </Russia>
               <RussianCities />
+              </Russia>
+              
               <Moscow />
           </div>
           <Layout>
