@@ -102,7 +102,7 @@ class Map extends Component {
           // concatenate the name to get an icon from the style's sprite sheet
           'icon-image': ['concat', ['get', 'icon'], '-15'],
           'icon-size': 1,
-          'icon-allow-overlap': true,
+          // 'icon-allow-overlap': true,
           // get the title name from the source's "title" property
           // 'text-field': ['get', 'title'],
           // 'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
@@ -136,11 +136,6 @@ class Map extends Component {
               .setLngLat(coordinates)
               .setHTML(title)
               .addTo(map);
-
-              map.on('click', 'points', function() {
-                map.getCanvas().style.cursor = '';
-                popup.remove();
-                });
               });
             
               map.on('mouseleave', 'points', function() {
@@ -156,7 +151,7 @@ render() {
   return (
     <div>
       <h2 className='map-header'>Карта распространения заболевания: </h2>
-      <div id='map' style={{width: '90%', margin: '0 auto', height: '50vh'}} className="mapContainer" />
+      <div id='map' data-tap-disabled="true" style={{width: '90%', margin: '0 auto', height: '50vh'}} className="mapContainer" />
     </div>
 )
 }
