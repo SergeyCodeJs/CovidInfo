@@ -113,7 +113,7 @@ class Map extends Component {
           });
           var popup = new mapboxgl.Popup({
             closeButton: false,
-            closeOnClick: false
+            closeOnClick: true
             });
 
             map.on('mouseenter', 'points', function(e) {
