@@ -101,8 +101,8 @@ class Map extends Component {
           // get the icon name from the source's "icon" property
           // concatenate the name to get an icon from the style's sprite sheet
           'icon-image': ['concat', ['get', 'icon'], '-15'],
-          'icon-size': 2,
-          //'icon-allow-overlap': true,
+          'icon-size': 1,
+          'icon-allow-overlap': true,
           // get the title name from the source's "title" property
           // 'text-field': ['get', 'title'],
           // 'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
@@ -113,7 +113,7 @@ class Map extends Component {
           });
           var popup = new mapboxgl.Popup({
             closeButton: false,
-            closeOnClick: true
+            closeOnClick: false
             });
 
             map.on('mouseenter', 'points', function(e) {
@@ -136,6 +136,11 @@ class Map extends Component {
               .setLngLat(coordinates)
               .setHTML(title)
               .addTo(map);
+
+              map.on('click', 'points', function() {
+                map.getCanvas().style.cursor = '';
+                popup.remove();
+                });
               });
             
               map.on('mouseleave', 'points', function() {
