@@ -18,7 +18,7 @@ class App extends React.Component {
   render(props) {
     if (this.props.dailySummary && this.props.confirmed && this.props.deaths && this.props.recovered && this.props.russiaCommon) {
       return (
-        <React.Fragment>
+        <div className='content-wrapper'>
           <Header />
           
           <Map></Map>
@@ -33,7 +33,7 @@ class App extends React.Component {
           <Layout>
             <CovidRisingGraphic />
           </Layout>
-        </React.Fragment>
+        </div>
       );} else {
         return <Backdrop open={true} className='backdrop'> <CircularProgress color="inherit" /></Backdrop>
       }

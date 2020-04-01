@@ -1,12 +1,16 @@
 .stat-blocks-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .backdrop {
   z-index: 100;
   color: '#fff';
+}
+
+.content-wrapper {
+  max-width: 1440px;
 }
