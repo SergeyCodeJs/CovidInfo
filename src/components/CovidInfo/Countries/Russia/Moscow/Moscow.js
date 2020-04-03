@@ -16,13 +16,20 @@ const Moscow = (props) => {
         if(region.name.toLowerCase() === 'москва') {
         return (
           <div key = { index }>
-            <div className='data-info-header'>В Москве <p className='data-info-header--state'>{'(по состоянию на: ' + yesterdayDate + ')'}</p></div>
-            <div className='data-info-sick red'>{ region.cases }</div>
-            <div className='data-info-sick--text red'>заболело</div>
-            <div className='data-info-sick green' >{ region.cured }</div>
-            <div className='data-info-sick--text green'>выздоровело</div>
-            <div className='data-info-sick'>{ region.deaths }</div>
-            <div className='data-info-sick--text'>умерло</div>
+            <div className='data-info-header'>Москва</div>
+            <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
+            <div className='data-info-sick-container'>
+            <div className='data-info-sick'>{region.cases}</div>
+            <div className='data-info-sick--text'>болеет</div>
+          </div>
+          <div className='data-info-recovered-container'>
+            <div className='data-info-recovered green'>{region.cured} </div>
+            <div className='data-info-recovered--text green'>выздоровело</div>
+          </div>
+          <div className='data-info-death-container'>
+            <div className='data-info-death'>{region.deaths}</div>
+            <div className='data-info-death--text'>умерло</div>
+          </div>
           </div>
         )
           }

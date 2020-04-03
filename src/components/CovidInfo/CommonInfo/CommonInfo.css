@@ -1,37 +1,126 @@
 .data-container {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
   box-sizing: border-box;
-  border: 2px solid gray;
-  background-color: gray;
-  width: 350px;
-  height: 460px;
+  box-shadow: 7px 4px 10px rgba(157, 157, 157, 0.25);
+  border-radius: 7px;
+  width: 397px;
+  height: 350px;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 57px;
+  margin-bottom: 73px;
   position: relative;
 }
 
 .data-info-header {
-margin: 10px 0 0 5px;
-padding: 0;
-font-size: 25px;
-font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 37px;
+  margin-left: 35px;
+  position: relative;
 }
 
 .data-info-header--state {
-  padding: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
   margin: 0;
-  font-size: 15px;
+  margin-left: 36px;
 }
 
 .data-info-sick {
-  font-size: 80px;
-  font-weight: 700;
-  padding: 5px 0 5px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-left: 36px;
+  color: #000000;
+}
+
+.data-info-sick-container {
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .data-info-sick--text {
-  padding: 0 0 5px 5px;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
 }
+
+.data-info-recovered-container {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.data-info-recovered {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-left: 36px;
+  color: #4A9E07;;
+}
+
+
+.data-info-recovered--text {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4A9E07;
+}
+
+.data-info-death-container {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.data-info-death {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-left: 36px;
+  color: #E45707;
+}
+
+
+.data-info-death--text {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #E45707
+}
+
 
 .red {
   color: #a52e2e

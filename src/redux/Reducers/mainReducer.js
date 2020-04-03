@@ -1,4 +1,4 @@
-import { REQUEST_DATA, RECEIVE_DATA, RUSSIAN_CITIES_TOGGLE, RUSSIAN_CITIES_SEARCH } from '../../actions/actionTypes'
+import { REQUEST_DATA, RECEIVE_DATA, RUSSIAN_CITIES_TOGGLE, RUSSIAN_CITIES_SEARCH, RUSSIAN_CITIES_CLOSE } from '../../actions/actionTypes'
 import {info} from '../../utils/data'
 
 const initialState = {
@@ -36,11 +36,15 @@ export default function mainReducer(state = initialState, action) {
       })
     case RUSSIAN_CITIES_TOGGLE: 
       return  Object.assign({}, state, {
-        russianCityToggler: !state.russianCityToggler
+        russianCityToggler: true
       })
     case RUSSIAN_CITIES_SEARCH:
       return Object.assign({}, state, {
         rusRegionsForFilter: action.rusRegionsForFilter
+      })
+    case RUSSIAN_CITIES_CLOSE:
+      return  Object.assign({}, state, {
+        russianCityToggler: false
       })
     default: return state
   } 

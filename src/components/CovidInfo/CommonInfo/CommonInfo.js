@@ -13,13 +13,20 @@ const CommonInfo = (props) => {
   
   return (
   <div className='data-container'>
-    <div className='data-info-header'>В мире <p className='data-info-header--state'>{'(по состоянию на: ' + yesterdayDate + ')'}</p></div>
-    <div className='data-info-sick red'>{totalSick}</div>
-    <div className='data-info-sick--text red'>заболело</div>
-    <div className='data-info-sick green'>{totalRecovered} </div>
-    <div className='data-info-sick--text green'>выздоровело</div>
-    <div className='data-info-sick'>{totalDeath}</div>
-    <div className='data-info-sick--text'>умерло</div>
+    <div className='data-info-header'>Весь мир</div>
+    <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
+    <div className='data-info-sick-container'>
+      <div className='data-info-sick'>{totalSick}</div>
+      <div className='data-info-sick--text'>болеет</div>
+    </div>
+    <div className='data-info-recovered-container'>
+      <div className='data-info-recovered green'>{totalRecovered} </div>
+      <div className='data-info-recovered--text green'>выздоровело</div>
+    </div>
+    <div className='data-info-death-container'>
+      <div className='data-info-death'>{totalDeath}</div>
+      <div className='data-info-death--text'>умерло</div>
+    </div>
   </div>
   )
 }

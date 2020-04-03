@@ -1,8 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import './Russia.css'
-import Button from '@material-ui/core/Button'
-import {toggleRussianCities} from '../../../../actions/actions'
+import {toggleRussianCities, russianCitySearch, closeRussianCities} from '../../../../actions/actions'
+import close from '../../../../images/close.png'
+import search from '../../../../images/search.png'
 
 
 class Russia extends React.Component {
@@ -12,21 +13,36 @@ class Russia extends React.Component {
     let total = this.props.russiaCommon.confirmed.value
     let recovered = this.props.russiaCommon.recovered.value
     let deaths = this.props.russiaCommon.deaths.value
+    let regions = this.props.rusRegionsForFilter;
+    let initialRegions = this.props.rusRegions;
+
     
-    let name;
     let yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1)).toLocaleDateString();
     return (
       <div className='data-container'>
         {this.props.children}
         <div>
-        <Button style={{position: "absolute", left: 195, top: -1, height: 35, width: 150}} variant="contained" onClick={() => this.props.onClick(this.props)}>По регионам</Button>
-        <div className='data-info-header'>В России <p className='data-info-header--state'>{'(по состоянию на: ' + yesterdayDate + ')'}</p></div>
-          <div className='data-info-sick red'>{total}</div>
-          <div className='data-info-sick--text red'>заболело</div>
-          <div className='data-info-sick green'>{recovered}</div>
-          <div className='data-info-sick--text green'>выздоровело</div>
-          <div className='data-info-sick'>{deaths}</div>
-          <div className='data-info-sick--text'>умерло</div>
+        {/* <Button style={{position: "absolute", left: 195, top: -1, height: 35, width: 150}} variant="contained" onClick={() => this.props.onClick(this.props)}>По регионам</Button> */}
+        <div className='data-info-header'>Россия</div>
+          <form onSubmit={(e) => e.preventDefault()} noValidate autoComplete="off" className="form-search">
+            <input placeholder='искать по региону' className='input' type="text" id="search" name="search" onClick={() => this.props.onClick(this.props)} onChange={(event) => this.props.filterRegions(this.props, event.target.value, regions, initialRegions)}></input>
+          </form>
+
+          {this.props.russianCityToggler ? <img onClick={() => this.props.closeRegions(this.props)} className='close' src={close} alt='close'></img> : <img className='search' src={search} alt='search'></img>}
+
+          <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
+          <div className='data-info-sick-container'>
+            <div className='data-info-sick'>{total}</div>
+            <div className='data-info-sick--text'>болеет</div>
+          </div>
+          <div className='data-info-recovered-container'>
+            <div className='data-info-recovered green'>{recovered} </div>
+            <div className='data-info-recovered--text green'>выздоровело</div>
+          </div>
+          <div className='data-info-death-container'>
+            <div className='data-info-death'>{deaths}</div>
+            <div className='data-info-death--text'>умерло</div>
+          </div>
         </div>
       </div>
       )
@@ -41,7 +57,9 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    onClick: (props) => dispatch(toggleRussianCities(props))
+    onClick: (props) => dispatch(toggleRussianCities(props)),
+    filterRegions: (props, text, regions, initialRegions) => dispatch(russianCitySearch(props, text, regions, initialRegions)),
+    closeRegions: (props) => dispatch(closeRussianCities(props))
   }
 }
 

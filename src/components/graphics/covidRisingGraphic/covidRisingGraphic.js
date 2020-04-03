@@ -11,14 +11,14 @@ componentDidMount() {
   let confirmed = this.props.dailySummary.map(e => e.totalConfirmed);
   let deaths = this.props.dailySummary.map(e => e.deaths.total);
   let yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1)).toLocaleDateString()
-console.log(this.props)
+
 
   Highcharts.chart('container', {
     chart: {
         type: 'area'
     },
     title: {
-        text: 'Всего заболело и умерло в мире ' + '(по состоянию на: ' + yesterdayDate + '):'
+        text: ''
     },
     subtitle: {
         text: ''
@@ -56,12 +56,12 @@ console.log(this.props)
         }
     },
     series: [{
-        name: 'Заболевших',
+        name: 'Заболело (в мире)',
         data: confirmed,
-        color: '#a52e2e'
+        color: '#E45707'
     },
     {
-      name: 'Умерших',
+      name: 'Умерло (в мире)',
       data: deaths,
       color: 'black'
   } ]
@@ -70,9 +70,8 @@ console.log(this.props)
 
 render() {
 
-  
   return (
-    <figure className="highcharts-figure">
+    <figure style={{margin:0}} className="highcharts-figure">
       <div id="container"></div>
       <p className="highcharts-description">
       </p>

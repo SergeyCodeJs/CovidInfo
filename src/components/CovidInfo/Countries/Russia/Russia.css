@@ -8,3 +8,28 @@
 .history-date-value {
   display: inline-block;
 }
+
+.form-search {
+  position: absolute;
+  top: 63px;
+  right: 30px;
+}
+
+.input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 140px;
+}
+
+.close, .search {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 65px;
+  left: 347px; 
+}
+
+.close {
+  cursor: pointer;
+}

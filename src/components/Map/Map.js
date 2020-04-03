@@ -150,8 +150,7 @@ render() {
   
   return (
     <div>
-      <h2 className='map-header'>Карта распространения заболевания: </h2>
-      <div id='map' data-tap-disabled="true" style={{width: '90%', margin: '0 auto', height: '50vh'}} className="mapContainer" />
+      <div id='map' data-tap-disabled="true" style={{width: '100%', margin: '0 auto', height: 409}} className="mapContainer" />
     </div>
 )
 }

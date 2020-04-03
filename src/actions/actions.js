@@ -1,4 +1,4 @@
-import { RECEIVE_DATA, REQUEST_DATA, CHANGE_MAP_DATA, RUSSIAN_CITIES_TOGGLE, RUSSIAN_CITIES_SEARCH } from './actionTypes'
+import { RECEIVE_DATA, REQUEST_DATA, CHANGE_MAP_DATA, RUSSIAN_CITIES_TOGGLE, RUSSIAN_CITIES_SEARCH, RUSSIAN_CITIES_CLOSE } from './actionTypes'
 
 export function requestData() {
   return {
@@ -80,6 +80,12 @@ export function toggleRussianCities() {
   }
 }
 
+export function closeRussianCities() {
+  return {
+    type: RUSSIAN_CITIES_CLOSE
+  }
+}
+
 export function russianCitySearch(props, text, regions, initialRegions) {
   
   let filtered = initialRegions.filter((region, index) => {
@@ -90,7 +96,7 @@ export function russianCitySearch(props, text, regions, initialRegions) {
     return regionNames.includes(inputText)
   })
 
-  console.log(filtered)
+  
   return {
     type: RUSSIAN_CITIES_SEARCH,
     rusRegionsForFilter: filtered

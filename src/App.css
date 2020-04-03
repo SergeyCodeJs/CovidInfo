@@ -14,3 +14,8 @@
 .content-wrapper {
   max-width: 1440px;
 }
+
+.content-margins {
+  width: 89.4%;
+  margin: 0 auto;
+}

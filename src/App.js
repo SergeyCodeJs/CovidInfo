@@ -19,20 +19,20 @@ class App extends React.Component {
     if (this.props.dailySummary && this.props.confirmed && this.props.deaths && this.props.recovered && this.props.russiaCommon) {
       return (
         <div className='content-wrapper'>
+          <div className='content-margins'>
           <Header />
-          
           <Map></Map>
           <div className='stat-blocks-container'>
               <CommonInfo/>
               <Russia>
               <RussianCities />
               </Russia>
-              
               <Moscow />
           </div>
           <Layout>
             <CovidRisingGraphic />
           </Layout>
+          </div>
         </div>
       );} else {
         return <Backdrop open={true} className='backdrop'> <CircularProgress color="inherit" /></Backdrop>
