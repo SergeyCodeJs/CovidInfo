@@ -1,3 +1,5 @@
+
+
 export let info = [
   {
     name: 'Алтайский край',
@@ -6,8 +8,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      82.530013,
-      52.129671
+      '82.530013',
+      '52.129671'
     ]
   },
   {
@@ -17,30 +19,30 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      127.72806399999999,
-      53.413341
+      '127.728064',
+      '53.413341'
     ]
   },
   {
     name: 'Архангельская область',
     ru: true,
-    cases: 7,
+    cases: 8,
     cured: 0,
     deaths: 0,
     coordinates: [
-      43.336661,
-      63.637517
+      '43.336661',
+      '63.637517'
     ]
   },
   {
     name: 'Астраханская область',
     ru: true,
-    cases: 2,
+    cases: 5,
     cured: 0,
     deaths: 0,
     coordinates: [
-      47.466189,
-      46.851463
+      '47.466189',
+      '46.851463'
     ]
   },
   {
@@ -50,19 +52,19 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      37.303197999999995,
-      50.872231
+      '37.303198',
+      '50.872231'
     ]
   },
   {
     name: 'Брянская область',
     ru: true,
-    cases: 5,
+    cases: 7,
     cured: 0,
     deaths: 0,
     coordinates: [
-      33.422197,
-      52.909192000000004
+      '33.422197',
+      '52.909192'
     ]
   },
   {
@@ -72,8 +74,8 @@ export let info = [
     cured: 0,
     deaths: 1,
     coordinates: [
-      40.898894,
-      55.904194999999994
+      '40.898894',
+      '55.904195'
     ]
   },
   {
@@ -83,8 +85,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      44.151406,
-      49.615821000000004
+      '44.151406',
+      '49.615821'
     ]
   },
   {
@@ -94,8 +96,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      44.049618,
-      60.138988
+      '44.049618',
+      '60.138988'
     ],
     histogram: [
       {
@@ -109,7 +111,10 @@ export let info = [
         value: 9
       },
       {
-        name: '2 апреля',
+        value: 12
+      },
+      {
+        name: '3 апреля',
         value: 12
       }
     ]
@@ -121,8 +126,8 @@ export let info = [
     cured: 2,
     deaths: 0,
     coordinates: [
-      40.233395,
-      50.970898
+      '40.233395',
+      '50.970898'
     ],
     histogram: [
       {
@@ -169,9 +174,23 @@ export let info = [
         value: 12
       },
       {
-        name: '2 апреля',
+        value: 12
+      },
+      {
+        name: '3 апреля',
         value: 12
       }
+    ]
+  },
+  {
+    name: 'Еврейская автономная область',
+    ru: true,
+    cases: 3,
+    cured: 0,
+    deaths: 0,
+    coordinates: [
+      '132.257612',
+      '48.522902'
     ]
   },
   {
@@ -181,19 +200,19 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      116.200424,
-      52.847258
+      '116.200424',
+      '52.847258'
     ]
   },
   {
     name: 'Ивановская область',
     ru: true,
-    cases: 11,
+    cases: 13,
     cured: 1,
     deaths: 0,
     coordinates: [
-      41.966406,
-      56.967836
+      '41.966406',
+      '56.967836'
     ],
     histogram: [
       {
@@ -240,20 +259,23 @@ export let info = [
         value: 11
       },
       {
-        name: '2 апреля',
         value: 11
+      },
+      {
+        name: '3 апреля',
+        value: 13
       }
     ]
   },
   {
     name: 'Иркутская область',
     ru: true,
-    cases: 7,
+    cases: 8,
     cured: 0,
     deaths: 0,
     coordinates: [
-      106.36330500000001,
-      57.10029399999999
+      '106.363305',
+      '57.100294'
     ]
   },
   {
@@ -263,8 +285,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      43.408274,
-      43.494396
+      '43.408274',
+      '43.494396'
     ]
   },
   {
@@ -274,8 +296,8 @@ export let info = [
     cured: 5,
     deaths: 0,
     coordinates: [
-      21.218944,
-      54.56009
+      '21.218944',
+      '54.56009'
     ],
     histogram: [
       {
@@ -295,6 +317,9 @@ export let info = [
         value: 2
       },
       {
+        value: 2
+      },
+      {
         value: 3
       },
       {
@@ -352,7 +377,10 @@ export let info = [
         value: 12
       },
       {
-        name: '2 апреля',
+        value: 19
+      },
+      {
+        name: '3 апреля',
         value: 19
       }
     ]
@@ -364,8 +392,8 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      35.445184999999995,
-      54.3718
+      '35.445185',
+      '54.3718'
     ]
   },
   {
@@ -375,19 +403,19 @@ export let info = [
     cured: 2,
     deaths: 0,
     coordinates: [
-      86.990382,
-      54.897940000000006
+      '86.990382',
+      '54.89794'
     ]
   },
   {
     name: 'Кировская область',
     ru: true,
-    cases: 12,
+    cases: 15,
     cured: 3,
     deaths: 0,
     coordinates: [
-      49.69543,
-      58.344108
+      '49.69543',
+      '58.344108'
     ],
     histogram: [
       {
@@ -443,8 +471,11 @@ export let info = [
         value: 12
       },
       {
-        name: '2 апреля',
         value: 12
+      },
+      {
+        name: '3 апреля',
+        value: 15
       }
     ]
   },
@@ -455,23 +486,26 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      43.788495000000005,
-      58.456003
+      '43.788495',
+      '58.456003'
     ]
   },
   {
     name: 'Краснодарский край',
     ru: true,
-    cases: 22,
+    cases: 39,
     cured: 4,
     deaths: 0,
     coordinates: [
-      39.610422,
-      45.544903999999995
+      '39.610422',
+      '45.544904'
     ],
     histogram: [
       {
-        name: '13 марта',
+        name: '12 марта',
+        value: 1
+      },
+      {
         value: 1
       },
       {
@@ -532,8 +566,11 @@ export let info = [
         value: 22
       },
       {
-        name: '2 апреля',
         value: 22
+      },
+      {
+        name: '3 апреля',
+        value: 39
       }
     ]
   },
@@ -544,8 +581,8 @@ export let info = [
     cured: 4,
     deaths: 0,
     coordinates: [
-      95.96847700000001,
-      67.236779
+      '95.968477',
+      '67.236779'
     ],
     histogram: [
       {
@@ -598,7 +635,10 @@ export let info = [
         value: 20
       },
       {
-        name: '2 апреля',
+        value: 25
+      },
+      {
+        name: '3 апреля',
         value: 25
       }
     ]
@@ -610,30 +650,30 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      64.809405,
-      55.448347
+      '64.809405',
+      '55.448347'
     ]
   },
   {
     name: 'Курская область',
     ru: true,
-    cases: 3,
+    cases: 4,
     cured: 0,
     deaths: 0,
     coordinates: [
-      36.121347,
-      51.535008000000005
+      '36.121347',
+      '51.535008'
     ]
   },
   {
     name: 'Ленинградская область',
     ru: true,
-    cases: 31,
+    cases: 41,
     cured: 1,
     deaths: 0,
     coordinates: [
-      29.608975,
-      59.337013
+      '29.608975',
+      '59.337013'
     ],
     histogram: [
       {
@@ -698,24 +738,30 @@ export let info = [
         value: 20
       },
       {
-        name: '2 апреля',
         value: 31
+      },
+      {
+        name: '3 апреля',
+        value: 41
       }
     ]
   },
   {
     name: 'Липецкая область',
     ru: true,
-    cases: 15,
+    cases: 18,
     cured: 3,
     deaths: 0,
     coordinates: [
-      39.149784000000004,
-      52.64455400000001
+      '39.149784',
+      '52.644554'
     ],
     histogram: [
       {
         name: '7 марта',
+        value: 3
+      },
+      {
         value: 3
       },
       {
@@ -791,8 +837,11 @@ export let info = [
         value: 11
       },
       {
-        name: '2 апреля',
         value: 15
+      },
+      {
+        name: '3 апреля',
+        value: 18
       }
     ]
   },
@@ -803,19 +852,19 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      154.036835,
-      62.575815000000006
+      '154.036835',
+      '62.575815'
     ]
   },
   {
     name: 'Москва',
     ru: true,
-    cases: 2475,
-    cured: 140,
-    deaths: 19,
+    cases: 2923,
+    cured: 168,
+    deaths: 20,
     coordinates: [
-      37.622504,
-      55.753215000000004
+      '37.622504',
+      '55.753215'
     ],
     histogram: [
       {
@@ -836,6 +885,9 @@ export let info = [
       },
       {
         value: 17
+      },
+      {
+        value: 21
       },
       {
         value: 26
@@ -898,20 +950,23 @@ export let info = [
         value: 1880
       },
       {
-        name: '2 апреля',
         value: 2475
+      },
+      {
+        name: '3 апреля',
+        value: 2923
       }
     ]
   },
   {
     name: 'Московская область',
     ru: true,
-    cases: 177,
+    cases: 211,
     cured: 17,
     deaths: 2,
     coordinates: [
-      36.493903,
-      55.76613100000001
+      '36.493903',
+      '55.766131'
     ],
     histogram: [
       {
@@ -941,6 +996,9 @@ export let info = [
       },
       {
         value: 2
+      },
+      {
+        value: 4
       },
       {
         value: 4
@@ -1006,8 +1064,11 @@ export let info = [
         value: 134
       },
       {
-        name: '2 апреля',
         value: 177
+      },
+      {
+        name: '3 апреля',
+        value: 211
       }
     ]
   },
@@ -1018,8 +1079,8 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      35.010051000000004,
-      68.004154
+      '35.010051',
+      '68.004154'
     ],
     histogram: [
       {
@@ -1066,7 +1127,10 @@ export let info = [
         value: 11
       },
       {
-        name: '2 апреля',
+        value: 15
+      },
+      {
+        name: '3 апреля',
         value: 15
       }
     ]
@@ -1078,8 +1142,8 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      44.279559000000006,
-      56.595648
+      '44.279559',
+      '56.595648'
     ],
     histogram: [
       {
@@ -1114,6 +1178,9 @@ export let info = [
         value: 1
       },
       {
+        value: 1
+      },
+      {
         value: 2
       },
       {
@@ -1162,7 +1229,10 @@ export let info = [
         value: 12
       },
       {
-        name: '2 апреля',
+        value: 25
+      },
+      {
+        name: '3 апреля',
         value: 25
       }
     ]
@@ -1174,8 +1244,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      32.490221999999996,
-      58.307715
+      '32.490222',
+      '58.307715'
     ]
   },
   {
@@ -1185,8 +1255,8 @@ export let info = [
     cured: 2,
     deaths: 0,
     coordinates: [
-      79.264861,
-      55.582395999999996
+      '79.264861',
+      '55.582396'
     ],
     histogram: [
       {
@@ -1236,7 +1306,10 @@ export let info = [
         value: 10
       },
       {
-        name: '2 апреля',
+        value: 10
+      },
+      {
+        name: '3 апреля',
         value: 10
       }
     ]
@@ -1248,8 +1321,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      73.34441600000001,
-      56.103472
+      '73.344416',
+      '56.103472'
     ]
   },
   {
@@ -1259,8 +1332,8 @@ export let info = [
     cured: 0,
     deaths: 1,
     coordinates: [
-      53.498681999999995,
-      52.743528000000005
+      '53.498682',
+      '52.743528'
     ],
     histogram: [
       {
@@ -1307,7 +1380,10 @@ export let info = [
         value: 7
       },
       {
-        name: '2 апреля',
+        value: 12
+      },
+      {
+        name: '3 апреля',
         value: 12
       }
     ]
@@ -1319,19 +1395,19 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      36.481041999999995,
-      52.781455
+      '36.481042',
+      '52.781455'
     ]
   },
   {
     name: 'Пензенская область',
     ru: true,
-    cases: 16,
+    cases: 27,
     cured: 0,
     deaths: 1,
     coordinates: [
-      43.946822999999995,
-      53.240931999999994
+      '43.946823',
+      '53.240932'
     ],
     histogram: [
       {
@@ -1384,20 +1460,23 @@ export let info = [
         value: 16
       },
       {
-        name: '2 апреля',
         value: 16
+      },
+      {
+        name: '3 апреля',
+        value: 27
       }
     ]
   },
   {
     name: 'Пермский край',
     ru: true,
-    cases: 20,
-    cured: 1,
-    deaths: 1,
+    cases: 21,
+    cured: 3,
+    deaths: 2,
     coordinates: [
-      56.22567900000001,
-      59.117698
+      '56.225679',
+      '59.117698'
     ],
     histogram: [
       {
@@ -1462,20 +1541,23 @@ export let info = [
         value: 13
       },
       {
-        name: '2 апреля',
         value: 20
+      },
+      {
+        name: '3 апреля',
+        value: 21
       }
     ]
   },
   {
     name: 'Приморский край',
     ru: true,
-    cases: 5,
+    cases: 7,
     cured: 2,
     deaths: 0,
     coordinates: [
-      134.709375,
-      45.04198
+      '134.709375',
+      '45.041980'
     ]
   },
   {
@@ -1485,8 +1567,8 @@ export let info = [
     cured: 0,
     deaths: 2,
     coordinates: [
-      29.236911,
-      57.236486
+      '29.236911',
+      '57.236486'
     ]
   },
   {
@@ -1496,19 +1578,19 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      40.252969,
-      44.429866
+      '40.252969',
+      '44.429866'
     ]
   },
   {
     name: 'Республика Башкортостан',
     ru: true,
     cases: 10,
-    cured: 1,
+    cured: 5,
     deaths: 0,
     coordinates: [
-      56.525537,
-      54.2715
+      '56.525537',
+      '54.271500'
     ],
     histogram: [
       {
@@ -1540,7 +1622,10 @@ export let info = [
         value: 8
       },
       {
-        name: '2 апреля',
+        value: 10
+      },
+      {
+        name: '3 апреля',
         value: 10
       }
     ]
@@ -1548,12 +1633,12 @@ export let info = [
   {
     name: 'Республика Бурятия',
     ru: true,
-    cases: 30,
+    cases: 31,
     cured: 0,
     deaths: 0,
     coordinates: [
-      112.348699,
-      54.544222
+      '112.348699',
+      '54.544222'
     ],
     histogram: [
       {
@@ -1579,8 +1664,11 @@ export let info = [
         value: 25
       },
       {
-        name: '2 апреля',
         value: 30
+      },
+      {
+        name: '3 апреля',
+        value: 31
       }
     ]
   },
@@ -1591,8 +1679,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      47.095742,
-      42.259793
+      '47.095742',
+      '42.259793'
     ],
     histogram: [
       {
@@ -1615,20 +1703,34 @@ export let info = [
         value: 15
       },
       {
-        name: '2 апреля',
+        value: 25
+      },
+      {
+        name: '3 апреля',
         value: 25
       }
     ]
   },
   {
-    name: 'Республика Калмыкия',
+    name: 'Республика Ингушетия',
     ru: true,
-    cases: 2,
+    cases: 1,
     cured: 0,
     deaths: 0,
     coordinates: [
-      45.325701,
-      46.414024
+      '45.054581',
+      '43.103590'
+    ]
+  },
+  {
+    name: 'Республика Калмыкия',
+    ru: true,
+    cases: 7,
+    cured: 0,
+    deaths: 0,
+    coordinates: [
+      '45.325701',
+      '46.414024'
     ]
   },
   {
@@ -1636,10 +1738,10 @@ export let info = [
     ru: true,
     cases: 56,
     cured: 1,
-    deaths: 0,
+    deaths: 2,
     coordinates: [
-      54.789668999999996,
-      64.125463
+      '54.789669',
+      '64.125463'
     ],
     histogram: [
       {
@@ -1695,7 +1797,10 @@ export let info = [
         value: 54
       },
       {
-        name: '2 апреля',
+        value: 56
+      },
+      {
+        name: '3 апреля',
         value: 56
       }
     ]
@@ -1703,12 +1808,12 @@ export let info = [
   {
     name: 'Республика Крым',
     ru: true,
-    cases: 16,
+    cases: 18,
     cured: 1,
     deaths: 0,
     coordinates: [
-      33.993751,
-      45.389194
+      '33.993751',
+      '45.389194'
     ],
     histogram: [
       {
@@ -1749,8 +1854,11 @@ export let info = [
         value: 16
       },
       {
-        name: '2 апреля',
         value: 16
+      },
+      {
+        name: '3 апреля',
+        value: 18
       }
     ]
   },
@@ -1761,8 +1869,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      48.197858000000004,
-      56.485739
+      '48.197858',
+      '56.485739'
     ]
   },
   {
@@ -1772,8 +1880,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      44.319669,
-      54.205757999999996
+      '44.319669',
+      '54.205758'
     ]
   },
   {
@@ -1783,8 +1891,8 @@ export let info = [
     cured: 4,
     deaths: 0,
     coordinates: [
-      119.845652,
-      65.061073
+      '119.845652',
+      '65.061073'
     ],
     histogram: [
       {
@@ -1831,7 +1939,10 @@ export let info = [
         value: 15
       },
       {
-        name: '2 апреля',
+        value: 15
+      },
+      {
+        name: '3 апреля',
         value: 15
       }
     ]
@@ -1843,19 +1954,19 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      44.262033,
-      43.092669
+      '44.262033',
+      '43.092669'
     ]
   },
   {
     name: 'Республика Татарстан',
     ru: true,
-    cases: 19,
-    cured: 2,
+    cases: 25,
+    cured: 6,
     deaths: 0,
     coordinates: [
-      50.911013,
-      55.350336
+      '50.911013',
+      '55.350336'
     ],
     histogram: [
       {
@@ -1908,8 +2019,11 @@ export let info = [
         value: 19
       },
       {
-        name: '2 апреля',
         value: 19
+      },
+      {
+        name: '3 апреля',
+        value: 25
       }
     ]
   },
@@ -1920,8 +2034,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      89.89707800000001,
-      53.386357
+      '89.897078',
+      '53.386357'
     ]
   },
   {
@@ -1931,8 +2045,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      47.086875,
-      55.492022999999996
+      '47.086875',
+      '55.492023'
     ]
   },
   {
@@ -1942,30 +2056,30 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      41.268128000000004,
-      47.728732
+      '41.268128',
+      '47.728732'
     ]
   },
   {
     name: 'Рязанская область',
     ru: true,
-    cases: 5,
+    cases: 6,
     cured: 1,
     deaths: 0,
     coordinates: [
-      40.950331,
-      54.559725
+      '40.950331',
+      '54.559725'
     ]
   },
   {
     name: 'Самарская область',
     ru: true,
     cases: 17,
-    cured: 2,
+    cured: 7,
     deaths: 0,
     coordinates: [
-      50.34431,
-      53.452932
+      '50.34431',
+      '53.452932'
     ],
     histogram: [
       {
@@ -2021,7 +2135,10 @@ export let info = [
         value: 15
       },
       {
-        name: '2 апреля',
+        value: 17
+      },
+      {
+        name: '3 апреля',
         value: 17
       }
     ]
@@ -2029,16 +2146,19 @@ export let info = [
   {
     name: 'Санкт-Петербург',
     ru: true,
-    cases: 147,
+    cases: 156,
     cured: 7,
     deaths: 2,
     coordinates: [
-      30.315868,
-      59.939094999999995
+      '30.315868',
+      '59.939095'
     ],
     histogram: [
       {
         name: '7 марта',
+        value: 1
+      },
+      {
         value: 1
       },
       {
@@ -2114,20 +2234,23 @@ export let info = [
         value: 125
       },
       {
-        name: '2 апреля',
         value: 147
+      },
+      {
+        name: '3 апреля',
+        value: 156
       }
     ]
   },
   {
     name: 'Саратовская область',
     ru: true,
-    cases: 15,
+    cases: 19,
     cured: 1,
     deaths: 0,
     coordinates: [
-      46.797222999999995,
-      51.578528999999996
+      '46.797223',
+      '51.578529'
     ],
     histogram: [
       {
@@ -2174,8 +2297,11 @@ export let info = [
         value: 15
       },
       {
-        name: '2 апреля',
         value: 15
+      },
+      {
+        name: '3 апреля',
+        value: 19
       }
     ]
   },
@@ -2186,19 +2312,19 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      142.750797,
-      50.150926
+      '142.750797',
+      '50.150926'
     ]
   },
   {
     name: 'Свердловская область',
     ru: true,
-    cases: 38,
+    cases: 39,
     cured: 8,
     deaths: 0,
     coordinates: [
-      61.530761,
-      58.586755000000004
+      '61.530761',
+      '58.586755'
     ],
     histogram: [
       {
@@ -2251,8 +2377,11 @@ export let info = [
         value: 33
       },
       {
-        name: '2 апреля',
         value: 38
+      },
+      {
+        name: '3 апреля',
+        value: 39
       }
     ]
   },
@@ -2263,8 +2392,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      33.525369,
-      44.616603999999995
+      '33.525369',
+      '44.616604'
     ]
   },
   {
@@ -2274,8 +2403,8 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      32.998543,
-      54.956192
+      '32.998543',
+      '54.956192'
     ]
   },
   {
@@ -2285,8 +2414,8 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      43.344521,
-      44.953551000000004
+      '43.344521',
+      '44.953551'
     ],
     histogram: [
       {
@@ -2327,7 +2456,10 @@ export let info = [
         value: 6
       },
       {
-        name: '2 апреля',
+        value: 11
+      },
+      {
+        name: '3 апреля',
         value: 11
       }
     ]
@@ -2339,19 +2471,19 @@ export let info = [
     cured: 0,
     deaths: 0,
     coordinates: [
-      41.592249,
-      52.474699
+      '41.592249',
+      '52.474699'
     ]
   },
   {
     name: 'Тверская область',
     ru: true,
-    cases: 5,
+    cases: 6,
     cured: 2,
     deaths: 0,
     coordinates: [
-      34.706195,
-      57.093033
+      '34.706195',
+      '57.093033'
     ]
   },
   {
@@ -2361,8 +2493,8 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      78.63728,
-      58.94919300000001
+      '78.63728',
+      '58.949193'
     ]
   },
   {
@@ -2372,8 +2504,8 @@ export let info = [
     cured: 3,
     deaths: 0,
     coordinates: [
-      37.575693,
-      53.888064
+      '37.575693',
+      '53.888064'
     ],
     histogram: [
       {
@@ -2420,7 +2552,10 @@ export let info = [
         value: 17
       },
       {
-        name: '2 апреля',
+        value: 17
+      },
+      {
+        name: '3 апреля',
         value: 17
       }
     ]
@@ -2428,12 +2563,76 @@ export let info = [
   {
     name: 'Тюменская область',
     ru: true,
-    cases: 6,
+    cases: 11,
     cured: 2,
     deaths: 0,
     coordinates: [
-      68.09604499999999,
-      57.541821
+      '68.096045',
+      '57.541821'
+    ],
+    histogram: [
+      {
+        name: '15 марта',
+        value: 1
+      },
+      {
+        value: 2
+      },
+      {
+        value: 2
+      },
+      {
+        value: 2
+      },
+      {
+        value: 2
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 4
+      },
+      {
+        value: 4
+      },
+      {
+        value: 6
+      },
+      {
+        value: 6
+      },
+      {
+        value: 6
+      },
+      {
+        name: '3 апреля',
+        value: 11
+      }
     ]
   },
   {
@@ -2443,52 +2642,156 @@ export let info = [
     cured: 3,
     deaths: 0,
     coordinates: [
-      52.796972,
-      57.166784
+      '52.796972',
+      '57.166784'
     ]
   },
   {
     name: 'Ульяновская область',
     ru: true,
     cases: 1,
-    cured: 0,
+    cured: 1,
     deaths: 0,
     coordinates: [
-      47.606533,
-      53.891056999999996
+      '47.606533',
+      '53.891057'
     ]
   },
   {
     name: 'Хабаровский край',
     ru: true,
-    cases: 9,
+    cases: 10,
     cured: 0,
     deaths: 0,
     coordinates: [
-      136.637034,
-      51.695886
+      '136.637034',
+      '51.695886'
+    ],
+    histogram: [
+      {
+        name: '19 марта',
+        value: 3
+      },
+      {
+        value: 3
+      },
+      {
+        value: 4
+      },
+      {
+        value: 4
+      },
+      {
+        value: 4
+      },
+      {
+        value: 4
+      },
+      {
+        value: 4
+      },
+      {
+        value: 5
+      },
+      {
+        value: 5
+      },
+      {
+        value: 5
+      },
+      {
+        value: 7
+      },
+      {
+        value: 7
+      },
+      {
+        value: 8
+      },
+      {
+        value: 9
+      },
+      {
+        value: 9
+      },
+      {
+        name: '3 апреля',
+        value: 10
+      }
     ]
   },
   {
     name: 'Ханты-Мансийский АО',
     ru: true,
-    cases: 8,
-    cured: 0,
+    cases: 16,
+    cured: 2,
     deaths: 0,
     coordinates: [
-      65.897508,
-      61.588912
+      '65.897508',
+      '61.588912'
+    ],
+    histogram: [
+      {
+        name: '19 марта',
+        value: 1
+      },
+      {
+        value: 1
+      },
+      {
+        value: 2
+      },
+      {
+        value: 2
+      },
+      {
+        value: 2
+      },
+      {
+        value: 2
+      },
+      {
+        value: 2
+      },
+      {
+        value: 4
+      },
+      {
+        value: 4
+      },
+      {
+        value: 4
+      },
+      {
+        value: 5
+      },
+      {
+        value: 5
+      },
+      {
+        value: 5
+      },
+      {
+        value: 8
+      },
+      {
+        value: 8
+      },
+      {
+        name: '3 апреля',
+        value: 16
+      }
     ]
   },
   {
     name: 'Челябинская область',
     ru: true,
-    cases: 21,
+    cases: 23,
     cured: 2,
     deaths: 0,
     coordinates: [
-      60.395641000000005,
-      54.446199
+      '60.395641',
+      '54.446199'
     ],
     histogram: [
       {
@@ -2529,20 +2832,23 @@ export let info = [
         value: 21
       },
       {
-        name: '2 апреля',
         value: 21
+      },
+      {
+        name: '3 апреля',
+        value: 23
       }
     ]
   },
   {
     name: 'Чеченская Республика',
     ru: true,
-    cases: 10,
+    cases: 12,
     cured: 0,
     deaths: 1,
     coordinates: [
-      45.747667,
-      43.305784
+      '45.747667',
+      '43.305784'
     ],
     histogram: [
       {
@@ -2574,20 +2880,33 @@ export let info = [
         value: 10
       },
       {
-        name: '2 апреля',
         value: 10
+      },
+      {
+        name: '3 апреля',
+        value: 12
       }
     ]
   },
   {
     name: 'Ямало-Ненецкий автономный округ',
     ru: true,
-    cases: 2,
+    cases: 12,
     cured: 0,
     deaths: 0,
     coordinates: [
-      80.005397,
-      66.086435
+      '80.005397',
+      '66.086435'
+    ],
+    histogram: [
+      {
+        name: '2 апреля',
+        value: 2
+      },
+      {
+        name: '3 апреля',
+        value: 12
+      }
     ]
   },
   {
@@ -2597,8 +2916,8 @@ export let info = [
     cured: 1,
     deaths: 0,
     coordinates: [
-      39.105138000000004,
-      57.817361
+      '39.105138',
+      '57.817361'
     ]
   }
 ]

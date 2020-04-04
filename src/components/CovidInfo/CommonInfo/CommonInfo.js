@@ -2,11 +2,16 @@ import React from 'react'
 import { connect } from 'react-redux'
 import difference from '../../../utils/assistFunctions'
 import './CommonInfo.css'
+import { addSpaceToNumber } from '../../../utils/assistFunctions'
+
 const CommonInfo = (props) => {
+
+
+  let totalSick = addSpaceToNumber(props.common.confirmed.value) || 'Unknown'
   
-  let totalSick = props.common.confirmed.value || 'Unknown'
-  let totalDeath = props.common.deaths.value || 'Unknown'
-  let totalRecovered = props.common.recovered.value || 0
+  let totalDeath = addSpaceToNumber(props.common.deaths.value) || 'Unknown'
+  
+  let totalRecovered = addSpaceToNumber(props.common.recovered.value) || 0
 
 
   let yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1)).toLocaleDateString()

@@ -4,15 +4,16 @@ import './Russia.css'
 import {toggleRussianCities, russianCitySearch, closeRussianCities} from '../../../../actions/actions'
 import close from '../../../../images/close.png'
 import search from '../../../../images/search.png'
-
+import { addSpaceToNumber } from '../../../../utils/assistFunctions'
 
 class Russia extends React.Component {
   
   render() {
 
-    let total = this.props.russiaCommon.confirmed.value
-    let recovered = this.props.russiaCommon.recovered.value
-    let deaths = this.props.russiaCommon.deaths.value
+    let total = addSpaceToNumber(this.props.russiaCommon.confirmed.value)
+    let recovered = addSpaceToNumber(this.props.russiaCommon.recovered.value)
+    let deaths = addSpaceToNumber(this.props.russiaCommon.deaths.value)
+
     let regions = this.props.rusRegionsForFilter;
     let initialRegions = this.props.rusRegions;
 
