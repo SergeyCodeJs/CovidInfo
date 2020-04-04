@@ -22,15 +22,15 @@ const CommonInfo = (props) => {
     <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
     <div className='data-info-sick-container'>
       <div className='data-info-sick'>{totalSick}</div>
-      <div className='data-info-sick--text'>болеет</div>
+      <div className='data-info-sick--text'>заражений</div>
     </div>
     <div className='data-info-recovered-container'>
       <div className='data-info-recovered green'>{totalRecovered} </div>
-      <div className='data-info-recovered--text green'>выздоровело</div>
+      <div className='data-info-recovered--text green'>выздоровлений</div>
     </div>
     <div className='data-info-death-container'>
       <div className='data-info-death'>{totalDeath}</div>
-      <div className='data-info-death--text'>умерло</div>
+      <div className='data-info-death--text'>смертей</div>
     </div>
   </div>
   )

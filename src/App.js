@@ -12,7 +12,7 @@ import Moscow from './components/CovidInfo/Countries/Russia/Moscow/Moscow'
 import Map from './components/Map/Map'
 import CovidRisingGraphic from './components/graphics/covidRisingGraphic/covidRisingGraphic';
 import RussianCities from './components/CovidInfo/Countries/Russia/russianCities/russianCities'
-
+import YandexMap from './components/yandexMap/yandexMap'
 class App extends React.Component {
 
   render(props) {
@@ -21,7 +21,7 @@ class App extends React.Component {
         <div className='content-wrapper'>
           <div className='content-margins'>
           <Header />
-          <Map></Map>
+          <YandexMap />
           <div className='stat-blocks-container'>
               <CommonInfo/>
               <Russia>

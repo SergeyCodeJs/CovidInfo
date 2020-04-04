@@ -40,3 +40,9 @@
   margin-top: 24px;
   margin-left: 14px;
 }
+
+@media (max-width: 1075px) {
+  .header-text, .heart {
+    display: none;
+  }
+}

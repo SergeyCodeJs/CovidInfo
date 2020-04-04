@@ -33,6 +33,15 @@
   margin-left: 36px;
 }
 
+.data-info-sick-container {
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+
 .data-info-sick {
   font-family: Roboto;
   font-style: normal;
@@ -43,12 +52,6 @@
   color: #000000;
 }
 
-.data-info-sick-container {
-  margin-top: 33px;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
 
 .data-info-sick--text {
   position: absolute;
@@ -130,3 +133,32 @@
   color: #51763f
 }
 
+
+@media (max-width: 425px) {
+  .data-info-sick {
+    font-size: 26px;
+  }
+  
+  
+  .data-info-sick--text {
+    font-size: 14px;
+  }
+
+  .data-info-recovered {
+    font-size: 26px;
+  }
+  
+  
+  .data-info-recovered--text {
+    font-size: 14px;
+  }
+
+  .data-info-death {
+    font-size: 26px;
+  }
+  
+  
+  .data-info-death--text {
+    font-size: 14px;
+  }
+}

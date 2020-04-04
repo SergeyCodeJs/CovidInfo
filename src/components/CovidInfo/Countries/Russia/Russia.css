@@ -33,3 +33,37 @@
 .close {
   cursor: pointer;
 }
+
+@media (max-width: 425px) {
+  .input {
+    width: 100px;
+  }
+
+  .close, .search {
+    left: 335px; 
+  }
+}
+
+@media (max-width: 415px) {
+  .close, .search {
+    left: 325px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .close, .search {
+    left: 310px; 
+  }
+}
+
+@media (max-width: 380px) {
+  .close, .search {
+    left: 295px; 
+  }
+}
+
+@media (max-width: 375px) {
+  .close, .search {
+    left: 290px; 
+  }
+}
