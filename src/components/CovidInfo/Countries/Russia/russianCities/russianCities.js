@@ -17,7 +17,7 @@ class RussianCities extends Component {
       {regions.map((region, index) => {
         return (
           <div key={index} className='regions-stat-container'>
-            <div style={{position: "relative"}}>
+            <div style={{position: "relative", display: 'flex'}}>
               <p className='regions-sick'>{region.name}</p>
               <p className='regions-cases'>{region.cases}</p>
               <p className='regions-recovered'>{region.cured}</p>

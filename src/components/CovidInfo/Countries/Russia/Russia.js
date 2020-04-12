@@ -22,16 +22,16 @@ class Russia extends React.Component {
     return (
       <div className='data-container'>
         {this.props.children}
-        <div>
-        {/* <Button style={{position: "absolute", left: 195, top: -1, height: 35, width: 150}} variant="contained" onClick={() => this.props.onClick(this.props)}>По регионам</Button> */}
+        <div className='data-info-main-container'>
         <div className='data-info-header'>Россия</div>
+        <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
           <form onSubmit={(e) => e.preventDefault()} noValidate autoComplete="off" className="form-search">
             <input placeholder='искать по региону' className='input' type="text" id="search" name="search" onClick={() => this.props.onClick(this.props)} onChange={(event) => this.props.filterRegions(this.props, event.target.value, regions, initialRegions)}></input>
           </form>
 
-          {this.props.russianCityToggler ? <img onClick={() => this.props.closeRegions(this.props)} className='close' src={close} alt='close'></img> : <img className='search' src={search} alt='search'></img>}
+          {this.props.russianCityToggler ? <img onClick={() => this.props.closeRegions(this.props)} className='close' src={close} alt='close'></img> : <img className='search' onClick={() => this.props.onClick(this.props)} src={search} alt='search'></img>}
 
-          <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
+        
           <div className='data-info-sick-container'>
             <div className='data-info-sick'>{total}</div>
             <div className='data-info-sick--text'>заражений</div>

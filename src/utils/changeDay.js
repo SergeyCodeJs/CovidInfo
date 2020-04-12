@@ -2,11 +2,11 @@ export default function(day) {
   let dayString = String(day)
 
 switch (dayString) {
-  case '0': return ' дней'
+  case '0': return ' дней';
   break;
-  case '1': return ' день'
+  case '1': return ' день';
   break;
-  case '2': return ' дня'
+  case '2': return ' дня';
   break;
   case '3': return ' дня'
   break;

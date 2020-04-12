@@ -134,6 +134,15 @@
 }
 
 
+@media (max-width: 768px) {
+  .data-container {
+    width: 768px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+
 @media (max-width: 425px) {
   .data-info-sick {
     font-size: 26px;

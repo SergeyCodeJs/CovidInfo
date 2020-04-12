@@ -11,7 +11,7 @@
 
 .form-search {
   position: absolute;
-  top: 63px;
+  top: 50px;
   right: 30px;
 }
 
@@ -26,44 +26,28 @@
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 65px;
-  left: 347px; 
+  top: 50px;
+  right: 5%; 
 }
 
 .close {
   cursor: pointer;
 }
 
-@media (max-width: 425px) {
-  .input {
-    width: 100px;
-  }
-
-  .close, .search {
-    left: 335px; 
-  }
+.data-info-main-container {
+  position: relative;
 }
 
-@media (max-width: 415px) {
-  .close, .search {
-    left: 325px; 
-  }
-}
 
-@media (max-width: 400px) {
-  .close, .search {
-    left: 310px; 
+@media (max-width: 450px) {
+  .form-search {
+    position: initial;
+    margin-left: 37px;
+    margin-top: 5px;
   }
-}
 
-@media (max-width: 380px) {
   .close, .search {
-    left: 295px; 
-  }
-}
-
-@media (max-width: 375px) {
-  .close, .search {
-    left: 290px; 
+    top: 75px;
+    left: 50%; 
   }
 }

@@ -66,16 +66,6 @@
   margin: 0;
 }
 
-.separator-left {
-  top: 7px;
-  left: 288px;
-}
-
-.separator-right {
-  top: 7px;
-  left: 328px;
-}
-
 .regions-recovered {
   position: absolute;
   top: 7px;
@@ -120,4 +110,49 @@
 
 .black {
   color: black
+}
+
+@media (max-width: 768px) {
+  .russian-cities-container-show {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .russian-cities-container-show {
+    top: 150px;
+    width: 100%;
+    height: 198px;
+  }
+
+  .regions-stat-container {
+    height: 60px;
+  }
+
+  .regions-sick {
+    position: relative;
+    margin: left;
+  }
+  
+  
+  
+  .regions-cases {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+  }
+  
+  .regions-recovered {
+    position: absolute;
+    top: 30px;
+    left: 65px;
+  }
+  
+  .regions-deaths {
+    position: absolute;
+    top: 30px;
+    left: 95px;
+  }
+  
+  
 }
