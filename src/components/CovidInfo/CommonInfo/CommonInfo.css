@@ -5,7 +5,7 @@
   box-shadow: 7px 4px 10px rgba(157, 157, 157, 0.25);
   border-radius: 7px;
   width: 397px;
-  height: 350px;
+  height: 380px;
   margin: 0 auto;
   margin-top: 57px;
   margin-bottom: 73px;
@@ -124,6 +124,36 @@
   color: #E45707
 }
 
+.data-info-now-sick-container {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.data-info-now-sick {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-left: 36px;
+  color: #FFE591;
+}
+
+
+.data-info-now-sick--text {
+  position: absolute;
+  top: 8px;
+  left: 200px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgb(61, 51, 17);
+}
+
 
 .red {
   color: #a52e2e
@@ -134,9 +164,9 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .data-container {
-    width: 768px;
+    width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
   }

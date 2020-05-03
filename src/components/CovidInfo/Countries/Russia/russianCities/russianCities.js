@@ -9,19 +9,32 @@ class RussianCities extends Component {
   
   render() {
   
-  let regions = this.props.rusRegionsForFilter;
+  let regions = this.props.RussianRegionsMediazona.data;
+  
 
   if (this.props.russianCityToggler) {
   return (
     <div className='russian-cities-container-show'>
       {regions.map((region, index) => {
+        let name = region.name;
+        let dead = region.dead.reduce((acc,curr) => {
+          return acc + curr
+      });
+      let recovered = region.recovered.reduce((acc,curr) => {
+        return acc + curr
+      });
+      
+      let confirmed = region.confirmed.reduce((acc,curr) => {
+        return acc + curr
+      });
+
         return (
           <div key={index} className='regions-stat-container'>
             <div style={{position: "relative", display: 'flex'}}>
-              <p className='regions-sick'>{region.name}</p>
-              <p className='regions-cases'>{region.cases}</p>
-              <p className='regions-recovered'>{region.cured}</p>
-              <p className='regions-deaths'>{region.deaths}</p>
+              <p className='regions-sick'>{name}</p>
+              <p className='regions-cases'>{confirmed}</p>
+              <p className='regions-recovered'>{recovered}</p>
+              <p className='regions-deaths'>{dead}</p>
             </div>
           </div>
         )} 

@@ -13,15 +13,16 @@ import Map from './components/Map/Map'
 import CovidRisingGraphic from './components/graphics/covidRisingGraphic/covidRisingGraphic';
 import RussianCities from './components/CovidInfo/Countries/Russia/russianCities/russianCities'
 import YandexMap from './components/yandexMap/yandexMap'
+import InfoSource from './components/InfoSource/InfoSource'
 class App extends React.Component {
 
   render(props) {
-    if (this.props.dailySummary && this.props.confirmed && this.props.deaths && this.props.recovered && this.props.russiaCommon) {
+    if (this.props.dailySummary && this.props.confirmed && this.props.deaths && this.props.recovered && this.props.russiaCommon && this.props.RussianRegionsMediazona && this.props.MediaZonaUpdated && this.props.RussianRegionsMediazonaForFilter) {
       return (
         <div className='content-wrapper'>
           <div className='content-margins'>
-          <Header />
-          <YandexMap />
+          <Header head='Карта заражения COVID-19' text='Берегите себя, оставайтесь дома' heart={true} h1={true}/>
+          <Map />
           <div className='stat-blocks-container'>
               <CommonInfo/>
               <Russia>
@@ -30,7 +31,9 @@ class App extends React.Component {
               <Moscow />
           </div>
           <Layout>
+            <Header head='График заражения COVID-19' text='' heart={false} h1={false}/>
             <CovidRisingGraphic />
+            <InfoSource />
           </Layout>
           </div>
         </div>

@@ -13,25 +13,36 @@ class Russia extends React.Component {
     let total = addSpaceToNumber(this.props.russiaCommon.confirmed.value)
     let recovered = addSpaceToNumber(this.props.russiaCommon.recovered.value)
     let deaths = addSpaceToNumber(this.props.russiaCommon.deaths.value)
-
-    let regions = this.props.rusRegionsForFilter;
-    let initialRegions = this.props.rusRegions;
+    let stillSick = addSpaceToNumber(this.props.russiaCommon.confirmed.value - this.props.russiaCommon.recovered.value)
 
     
-    let yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1)).toLocaleDateString();
+    let regions = this.props.RussianRegionsMediazona.data;
+    let initialRegions = this.props.RussianRegionsMediazonaForFilter;
+    let updated;
+
+    if(this.props.MediaZonaUpdated) {
+      updated = this.props.MediaZonaUpdated.updated_at;
+  
+      updated = new Date(updated);
+    
+      updated = updated.toLocaleDateString();
+    } else {
+      updated = null
+    }
+    
+
     return (
       <div className='data-container'>
         {this.props.children}
         <div className='data-info-main-container'>
         <div className='data-info-header'>Россия</div>
-        <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
-          <form onSubmit={(e) => e.preventDefault()} noValidate autoComplete="off" className="form-search">
-            <input placeholder='искать по региону' className='input' type="text" id="search" name="search" onClick={() => this.props.onClick(this.props)} onChange={(event) => this.props.filterRegions(this.props, event.target.value, regions, initialRegions)}></input>
-          </form>
-
-          {this.props.russianCityToggler ? <img onClick={() => this.props.closeRegions(this.props)} className='close' src={close} alt='close'></img> : <img className='search' onClick={() => this.props.onClick(this.props)} src={search} alt='search'></img>}
-
-        
+        <p className='data-info-header--state'>{'(обновлено: ' + updated + ')'}</p>
+          <div className="form-search-container">
+            <form onSubmit={(e) => e.preventDefault()} noValidate autoComplete="off" className="form-search">
+              <input placeholder='искать по региону' className='input' type="text" id="search" name="search" onClick={() => this.props.onClick(this.props)} onChange={(event) => this.props.filterRegions(this.props, event.target.value, regions, initialRegions)}></input>
+            </form>
+            {this.props.russianCityToggler ? <img onClick={() => this.props.closeRegions(this.props)} className='close' src={close} alt='close'></img> : <img className='search' onClick={() => this.props.onClick(this.props)} src={search} alt='search'></img>}
+          </div>               
           <div className='data-info-sick-container'>
             <div className='data-info-sick'>{total}</div>
             <div className='data-info-sick--text'>заражений</div>
@@ -43,6 +54,10 @@ class Russia extends React.Component {
           <div className='data-info-death-container'>
             <div className='data-info-death'>{deaths}</div>
             <div className='data-info-death--text'>смертей</div>
+          </div>
+          <div className='data-info-now-sick-container'>
+            <div className='data-info-now-sick'>{stillSick}</div>
+            <div className='data-info-now-sick--text'>еще болеют</div>
           </div>
         </div>
       </div>

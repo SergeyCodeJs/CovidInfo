@@ -14,7 +14,10 @@ const initialState = {
     russia: "https://covid19.mathdro.id/api/countries/russia",
     russiaConfirmed: 'https://covid19.mathdro.id/api/countries/russia/confirmed',
     russiaRecovered: 'https://covid19.mathdro.id/api/countries/russia/recovered',
-    russiaDeaths: 'https://covid19.mathdro.id/api/countries/russia/deaths'
+    russiaDeaths: 'https://covid19.mathdro.id/api/countries/russia/deaths',
+    russianRegionsMediazona: 'https://raw.githubusercontent.com/mediazona/data-corona-Russia/master/data.json',
+    russianRegionsMediazonaForFilter: 'https://raw.githubusercontent.com/mediazona/data-corona-Russia/master/data.json',
+    mediaZonaUpdated: 'https://api.github.com/repos/mediazona/data-corona-Russia'
   },
     rusRegions: info,
     rusRegionsForFilter: info.slice()
@@ -22,7 +25,7 @@ const initialState = {
 
 
 export default function mainReducer(state = initialState, action) {
-  const map = action.map
+  
   switch(action.type) {
     case REQUEST_DATA:
       return Object.assign({}, state, {
@@ -32,7 +35,8 @@ export default function mainReducer(state = initialState, action) {
       return Object.assign({}, state, {
         isFetch: false,
         [action.stateDataName]: action.dataName,
-        lastUpdated: action.receivedAt
+        lastUpdated: action.receivedAt,
+        RussianRegionsMediazonaForFilter: state.RussianRegionsMediazona
       })
     case RUSSIAN_CITIES_TOGGLE: 
       return  Object.assign({}, state, {
@@ -40,7 +44,7 @@ export default function mainReducer(state = initialState, action) {
       })
     case RUSSIAN_CITIES_SEARCH:
       return Object.assign({}, state, {
-        rusRegionsForFilter: action.rusRegionsForFilter
+        RussianRegionsMediazona: action.RussianRegionsMediazonaForFilter
       })
     case RUSSIAN_CITIES_CLOSE:
       return  Object.assign({}, state, {

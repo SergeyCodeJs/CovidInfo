@@ -13,6 +13,7 @@ const CommonInfo = (props) => {
   
   let totalRecovered = addSpaceToNumber(props.common.recovered.value) || 0
 
+  let stillSick = addSpaceToNumber(props.common.confirmed.value - props.common.deaths.value) || 'Unknown'
 
   let yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1)).toLocaleDateString()
   
@@ -31,6 +32,10 @@ const CommonInfo = (props) => {
     <div className='data-info-death-container'>
       <div className='data-info-death'>{totalDeath}</div>
       <div className='data-info-death--text'>смертей</div>
+    </div>
+    <div className='data-info-now-sick-container'>
+      <div className='data-info-now-sick'>{stillSick}</div>
+      <div className='data-info-now-sick--text'>еще болеют</div>
     </div>
   </div>
   )

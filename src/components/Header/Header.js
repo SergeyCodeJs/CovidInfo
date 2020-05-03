@@ -12,15 +12,12 @@ const Header = (props) => {
   return (
     <div>
       <div className='header-container'>
-        <h1 className='header'>Карта заражения COVID-19</h1>
+        {props.h1 ? <h1 className='header'>{props.head}</h1> : <h2 className='header'>{props.head}</h2>}
         <div className='header-text-container'>
-          <p className='header-text'>Берегите себя, оставайтесь дома</p>
-          <img src={heart} alt='heart' className='heart'></img>
+          <p className='header-text'>{props.text}</p>
+          {props.heart ? <img src={heart} alt='heart' className='heart'></img> : null}
         </div>
       </div>
-    {/* <p className='updated'>Последнее обновление: </p>
-    <p className='updated'>Информация по миру и общие данные по России - {day},</p>
-    <p className='updated'>Информация по регионам России - 03.04.2020, 03:20</p> */}
     </div>
   )
 }

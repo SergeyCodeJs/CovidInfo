@@ -40,6 +40,12 @@ export function receiveData(json, url) {
     case "https://covid19.mathdro.id/api/countries/russia/deaths":
     dataName = "russiaDeaths";
     break;
+    case "https://raw.githubusercontent.com/mediazona/data-corona-Russia/master/data.json":
+    dataName = "RussianRegionsMediazona";
+    break;
+    case "https://api.github.com/repos/mediazona/data-corona-Russia":
+    dataName = "MediaZonaUpdated";
+    break;
     default: dataName = "unknown"
   }
   
@@ -87,8 +93,10 @@ export function closeRussianCities() {
 }
 
 export function russianCitySearch(props, text, regions, initialRegions) {
-  
-  let filtered = initialRegions.filter((region, index) => {
+  let newInitialRegions = {};
+  newInitialRegions.startDate = initialRegions.startDate;
+
+  let filtered = initialRegions.data.filter((region) => {
 
     let regionNames = region.name.toLowerCase();
     let inputText = text.toLowerCase();
@@ -96,9 +104,10 @@ export function russianCitySearch(props, text, regions, initialRegions) {
     return regionNames.includes(inputText)
   })
 
+  newInitialRegions.data = filtered
   
   return {
     type: RUSSIAN_CITIES_SEARCH,
-    rusRegionsForFilter: filtered
+    RussianRegionsMediazonaForFilter: newInitialRegions
   }
 }

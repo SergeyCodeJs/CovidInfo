@@ -112,7 +112,7 @@
   color: black
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .russian-cities-container-show {
     width: 100%;
   }

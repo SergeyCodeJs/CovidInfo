@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "google-translate": "^3.0.0",
     "highcharts": "^8.0.4",
     "mapbox-gl": "^1.9.0",
     "moment": "^2.24.0",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-devtools": "^4.6.0"
   }
 }
