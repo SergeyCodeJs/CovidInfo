@@ -1,8 +1,34 @@
 import { RECEIVE_DATA, REQUEST_DATA, CHANGE_MAP_DATA, RUSSIAN_CITIES_TOGGLE, RUSSIAN_CITIES_SEARCH, RUSSIAN_CITIES_CLOSE } from './actionTypes'
 
+
 export function requestData() {
+  let options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  };
+  
+  let userLatitude;
+  let userLongitude;
+  
+  function success(pos) {
+    let crd = pos.coords;
+  
+    userLatitude = crd.latitude;
+    userLongitude = crd.longitude;
+  
+    return [userLatitude, userLongitude]
+  };
+  
+  function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+  };
+  
+  navigator.geolocation.getCurrentPosition(success, error, options);
+
   return {
-    type: REQUEST_DATA
+    type: REQUEST_DATA,
+    userCoordinates: [userLatitude, userLongitude]
   }
 }
 

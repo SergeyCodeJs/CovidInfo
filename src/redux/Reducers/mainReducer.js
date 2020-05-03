@@ -3,6 +3,7 @@ import {info} from '../../utils/data'
 
 const initialState = {
   isFetch: false,
+  userCoordinates: [],
   russianCityToggler: false,
   urls: {
     common: 'https://covid19.mathdro.id/api/',
@@ -25,11 +26,12 @@ const initialState = {
 
 
 export default function mainReducer(state = initialState, action) {
-  
+  console.log(action)
   switch(action.type) {
     case REQUEST_DATA:
       return Object.assign({}, state, {
-        isFetch: true
+        isFetch: true,
+        userCoordinates: action.userCoordinates
       })
     case RECEIVE_DATA: 
       return Object.assign({}, state, {
