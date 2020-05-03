@@ -31,14 +31,14 @@ export default function mainReducer(state = initialState, action) {
     case REQUEST_DATA:
       return Object.assign({}, state, {
         isFetch: true,
-        userCoordinates: action.userCoordinates
       })
     case RECEIVE_DATA: 
       return Object.assign({}, state, {
         isFetch: false,
         [action.stateDataName]: action.dataName,
         lastUpdated: action.receivedAt,
-        RussianRegionsMediazonaForFilter: state.RussianRegionsMediazona
+        RussianRegionsMediazonaForFilter: state.RussianRegionsMediazona,
+        userCoordinates: action.userCoordinates
       })
     case RUSSIAN_CITIES_TOGGLE: 
       return  Object.assign({}, state, {

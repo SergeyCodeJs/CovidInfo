@@ -1,5 +1,7 @@
 import { RECEIVE_DATA, REQUEST_DATA, CHANGE_MAP_DATA, RUSSIAN_CITIES_TOGGLE, RUSSIAN_CITIES_SEARCH, RUSSIAN_CITIES_CLOSE } from './actionTypes'
 
+let userLatitude;
+let userLongitude;
 
 export function requestData() {
   let options = {
@@ -7,9 +9,6 @@ export function requestData() {
     timeout: 5000,
     maximumAge: 0
   };
-  
-  let userLatitude;
-  let userLongitude;
   
   function success(pos) {
     let crd = pos.coords;
@@ -27,8 +26,7 @@ export function requestData() {
   navigator.geolocation.getCurrentPosition(success, error, options);
 
   return {
-    type: REQUEST_DATA,
-    userCoordinates: [userLatitude, userLongitude]
+    type: REQUEST_DATA
   }
 }
 
@@ -79,7 +77,8 @@ export function receiveData(json, url) {
     type: RECEIVE_DATA,
     dataName: json,
     stateDataName: dataName,
-    receivedAt: Date.now()
+    receivedAt: Date.now(),
+    userCoordinates: [userLatitude, userLongitude]
   }
 }
 
