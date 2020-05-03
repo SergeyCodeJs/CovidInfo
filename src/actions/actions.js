@@ -111,3 +111,4 @@ export function russianCitySearch(props, text, regions, initialRegions) {
     RussianRegionsMediazonaForFilter: newInitialRegions
   }
 }
+//'
