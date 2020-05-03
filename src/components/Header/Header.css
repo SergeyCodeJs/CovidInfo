@@ -42,7 +42,45 @@
 }
 
 @media (max-width: 1075px) {
+  .header {
+    margin: 5px;
+  }
+
   .header-text, .heart {
-    display: none;
+   margin: 0;
+  }
+
+  .header-text{
+    padding: 0px 10px 10px 0;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    font-size: 35px;
+  }
+
+  .header-text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 35px;
+  }
+
+  .header-text {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+
+  .header-container {
+    align-items: initial;
   }
 }

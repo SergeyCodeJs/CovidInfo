@@ -26,7 +26,6 @@ const initialState = {
 
 
 export default function mainReducer(state = initialState, action) {
-  console.log(action)
   switch(action.type) {
     case REQUEST_DATA:
       return Object.assign({}, state, {

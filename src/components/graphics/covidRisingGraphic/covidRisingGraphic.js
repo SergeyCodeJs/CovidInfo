@@ -71,7 +71,8 @@ componentDidMount() {
 render() {
 
   return (
-    <figure style={{margin:0}} className="highcharts-figure">
+    <figure style={{margin:0, boxShadow: '0px 4px 0px rgba(157, 157, 157, 0.25)',
+        borderRadius: '7px'}} className="highcharts-figure">
       <div id="container"></div>
       <p className="highcharts-description">
       </p>

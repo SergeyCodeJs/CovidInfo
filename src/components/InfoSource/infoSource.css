@@ -1,0 +1,8 @@
+.info-source-wrapper {
+  box-shadow: 7px 4px 10px rgba(157, 157, 157, 0.25);
+  border-radius: 7px;
+  margin-top: 10px;
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}

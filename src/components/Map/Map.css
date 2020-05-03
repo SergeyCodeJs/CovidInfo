@@ -1,5 +1,7 @@
 .mapContainer {
   width: 100%;
+  box-shadow: 7px 4px 10px rgba(157, 157, 157, 0.25);
+    border-radius: 7px;
 }
 
 .mapboxgl-popup {

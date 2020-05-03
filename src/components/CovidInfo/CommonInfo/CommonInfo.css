@@ -1,4 +1,5 @@
 .data-container {
+  position: relative;
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
   box-sizing: border-box;
@@ -9,8 +10,20 @@
   margin: 0 auto;
   margin-top: 57px;
   margin-bottom: 73px;
-  position: relative;
+  overflow: hidden;
 }
+
+.data-inner-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.data-info-flex-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 
 .data-info-header {
   font-family: Roboto;
@@ -19,8 +32,6 @@
   font-size: 48px;
   line-height: 56px;
   margin-top: 37px;
-  margin-left: 35px;
-  position: relative;
 }
 
 .data-info-header--state {
@@ -30,7 +41,7 @@
   font-size: 12px;
   line-height: 14px;
   margin: 0;
-  margin-left: 36px;
+  margin-left: 2px;
 }
 
 .data-info-sick-container {
@@ -48,15 +59,40 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  margin-left: 36px;
   color: #000000;
+  margin-right: 30px;
+  white-space: nowrap;
 }
 
+.data-info--text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.margin1 {
+  position: relative;
+  top: 12px;
+}
+
+.margin2 {
+  position: relative;
+  top: 17px;
+}
+
+.margin3 {
+  position: relative;
+  top: 19px
+}
+
+.margin4 {
+  position: relative;
+  top: 24px
+}
 
 .data-info-sick--text {
-  position: absolute;
-  top: 10px;
-  left: 200px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -77,15 +113,13 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  margin-left: 36px;
-  color: #4A9E07;;
+  color: #4A9E07;
+  margin-right: 30px;
+  white-space: nowrap;
 }
 
 
 .data-info-recovered--text {
-  position: absolute;
-  top: 10px;
-  left: 200px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -107,15 +141,13 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  margin-left: 36px;
   color: #E45707;
+  white-space: nowrap;
+  margin-right: 30px;
 }
 
 
 .data-info-death--text {
-  position: absolute;
-  top: 10px;
-  left: 200px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -137,15 +169,13 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  margin-left: 36px;
   color: #FFE591;
+  white-space: nowrap;
+  margin-right: 30px;
 }
 
 
 .data-info-now-sick--text {
-  position: absolute;
-  top: 8px;
-  left: 200px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -156,11 +186,15 @@
 
 
 .red {
-  color: #a52e2e
+  color: #E45707
 }
 
 .green {
   color: #51763f
+}
+
+.yellow {
+  color: #FFE591;
 }
 
 
@@ -198,6 +232,15 @@
   
   
   .data-info-death--text {
+    font-size: 14px;
+  }
+
+  .data-info-now-sick {
+    font-size: 26px;
+  }
+  
+  
+  .data-info-now-sick--text {
     font-size: 14px;
   }
 }

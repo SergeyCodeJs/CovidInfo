@@ -37,26 +37,35 @@ const Moscow = (props) => {
   })
 
   return (
-  <div className='data-container'>
-            <div className='data-info-header'>Москва</div>
-            <p className='data-info-header--state'>{'(обновлено: ' + updated + ')'}</p>
-            <div className='data-info-sick-container'>
+    <div className='data-container'>
+    <div className='data-inner-container'>
+      <div className='data-info-header'>Москва</div>
+      <p className='data-info-header--state'>{'(обновлено: ' + updated + ')'}</p>
+        <div className="data-info-flex-container">
+        <div className='data-headers-container'>
+          <div className='data-info-sick-container'>
             <div className='data-info-sick'>{addSpaceToNumber(confirmed)}</div>
-            <div className='data-info-sick--text'>заражений</div>
           </div>
           <div className='data-info-recovered-container'>
             <div className='data-info-recovered green'>{addSpaceToNumber(recovered)} </div>
-            <div className='data-info-recovered--text green'>выздоровлений</div>
           </div>
           <div className='data-info-death-container'>
             <div className='data-info-death'>{addSpaceToNumber(dead)}</div>
-            <div className='data-info-death--text'>смертей</div>
           </div>
           <div className='data-info-now-sick-container'>
             <div className='data-info-now-sick'>{addSpaceToNumber(confirmed - recovered)}</div>
-            <div className='data-info-now-sick--text'>еще болеют</div>
           </div>
-  </div>)}
+        </div>
+        <div className='data-numbers-container'>
+          <div className='data-info--text margin1'>заражений</div>
+          <div className='data-info--text margin2 green'>выздоровлений</div>
+          <div className='data-info--text margin3 red'>смертей</div>
+          <div className='data-info--text yellow margin4 yellow'>еще болеют</div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
 
 function mapStateToProps(state) {
   return {...state}

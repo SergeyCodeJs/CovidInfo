@@ -19,27 +19,37 @@ const CommonInfo = (props) => {
   
   return (
   <div className='data-container'>
-    <div className='data-info-header'>Весь мир</div>
-    <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
-    <div className='data-info-sick-container'>
-      <div className='data-info-sick'>{totalSick}</div>
-      <div className='data-info-sick--text'>заражений</div>
-    </div>
-    <div className='data-info-recovered-container'>
-      <div className='data-info-recovered green'>{totalRecovered} </div>
-      <div className='data-info-recovered--text green'>выздоровлений</div>
-    </div>
-    <div className='data-info-death-container'>
-      <div className='data-info-death'>{totalDeath}</div>
-      <div className='data-info-death--text'>смертей</div>
-    </div>
-    <div className='data-info-now-sick-container'>
-      <div className='data-info-now-sick'>{stillSick}</div>
-      <div className='data-info-now-sick--text'>еще болеют</div>
+    <div className='data-inner-container'>
+      <div className='data-info-header'>Весь мир</div>
+      <p className='data-info-header--state'>{'(обновлено: ' + yesterdayDate + ')'}</p>
+        <div className="data-info-flex-container">
+        <div className='data-headers-container'>
+          <div className='data-info-sick-container'>
+            <div className='data-info-sick'>{totalSick}</div>
+          </div>
+          <div className='data-info-recovered-container'>
+            <div className='data-info-recovered green'>{totalRecovered} </div>
+          </div>
+          <div className='data-info-death-container'>
+            <div className='data-info-death'>{totalDeath}</div>
+          </div>
+          <div className='data-info-now-sick-container'>
+            <div className='data-info-now-sick'>{stillSick}</div>
+          </div>
+        </div>
+        <div className='data-numbers-container'>
+          <div className='data-info--text margin1'>заражений</div>
+          <div className='data-info--text margin2 green'>выздоровлений</div>
+          <div className='data-info--text margin3 red'>смертей</div>
+          <div className='data-info--text yellow margin4'>еще болеют</div>
+        </div>
+      </div>
     </div>
   </div>
   )
 }
+
+
 
 function mapStateToProps(state) {
   return {...state}

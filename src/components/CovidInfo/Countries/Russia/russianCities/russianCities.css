@@ -6,6 +6,7 @@
   background-color: gray;
   width: 0px;
   transition: all ease-in-out 0.5s;
+  overflow: hidden;
 }
 
 .russian-cities-open {
@@ -14,12 +15,13 @@
 
 .russian-cities-container-show {
   top: 117px;
+  left: 0;
   position: absolute;
   z-index: 100;
   color: white;
   background-color: gray;
-  width: 397px;
-  height: 231px;
+  width: 100%;
+  height: 261px;
   transition: all ease-in-out 0.1s;
   overflow: scroll;
   overflow-x: hidden;
@@ -40,7 +42,7 @@
 
 .regions-sick {
   position: absolute;
-  left: 35px;
+  left: 15px;
   top: 7px;
   font-family: Roboto;
   font-style: normal;
@@ -55,7 +57,7 @@
 
 .regions-cases {
   position: absolute;
-  left: 255px;
+  left: 245px;
   top: 7px;
   font-family: Roboto;
   font-style: normal;
@@ -69,7 +71,7 @@
 .regions-recovered {
   position: absolute;
   top: 7px;
-  left: 306px;
+  left: 296px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -84,7 +86,7 @@
 .regions-deaths {
   position: absolute;
   top: 7px;
-  left: 352px;
+  left: 342px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -113,46 +115,39 @@
 }
 
 @media (max-width: 1300px) {
-  .russian-cities-container-show {
+  .regions-stat-container {
     width: 100%;
+    height: 40px;
+    margin: 10px 0 10px 0;
+    border-bottom: 0.5px solid #A4A3A3;
   }
 }
 
-@media (max-width: 450px) {
-  .russian-cities-container-show {
-    top: 150px;
-    width: 100%;
-    height: 198px;
-  }
-
+@media (max-width: 500px) {
   .regions-stat-container {
-    height: 60px;
+    width: 100%;
+    height: 85px;
+    margin: 10px 0 10px 0;
+    border-bottom: 0.5px solid #A4A3A3;
   }
 
   .regions-sick {
-    position: relative;
-    margin: left;
+    left: 23px;
+    top: 30px;
   }
-  
-  
-  
+
   .regions-cases {
-    position: absolute;
-    top: 34px;
-    left: 35px;
+    left: 265px;
+    top: 7px;
   }
-  
+
   .regions-recovered {
-    position: absolute;
-    top: 35px;
-    left: 65px;
+    top: 36px;
+    left: 265px;
   }
-  
+
   .regions-deaths {
-    position: absolute;
-    top: 35px;
-    left: 95px;
+    top: 63px;
+    left: 265px;
   }
-  
-  
 }

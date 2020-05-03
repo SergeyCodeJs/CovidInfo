@@ -28,6 +28,13 @@
   width: 140px;
 }
 
+.input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .close, .search {
   width: 15px;
   height: 15px;
@@ -44,18 +51,8 @@
   position: relative;
 }
 
-
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .form-search-container {
-    position: inherit;
-    margin-left: 37px;
-    margin-top: 5px;
-    top: 0;
     right: 0;
   }
-
-  /* .close, .search {
-    top: 75px;
-    left: 50%; 
-  } */
 }
