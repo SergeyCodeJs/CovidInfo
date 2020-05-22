@@ -13,7 +13,7 @@ const CommonInfo = (props) => {
   
   let totalRecovered = addSpaceToNumber(props.common.recovered.value) || 0
 
-  let stillSick = addSpaceToNumber(props.common.confirmed.value - props.common.deaths.value) || 'Unknown'
+  let stillSick = addSpaceToNumber(props.common.confirmed.value - props.common.recovered.value) || 'Unknown'
 
   let yesterdayDate = new Date(new Date().setDate(new Date().getDate() - 1)).toLocaleDateString()
   
